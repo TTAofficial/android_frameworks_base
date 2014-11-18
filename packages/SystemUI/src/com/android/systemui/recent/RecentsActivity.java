@@ -28,6 +28,8 @@ import android.os.UserHandle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.TextView;
+import android.graphics.Typeface;
 
 import com.android.systemui.R;
 import com.android.systemui.statusbar.StatusBarPanel;
@@ -209,6 +211,10 @@ public class RecentsActivity extends Activity {
         mIntentFilter.addAction(WINDOW_ANIMATION_START_INTENT);
         registerReceiver(mIntentReceiver, mIntentFilter);
         super.onCreate(savedInstanceState);
+
+		TextView recent_title = (TextView)findViewById(R.id.recent_apps_title);
+		recent_title.setTypeface(Typeface.createFromAsset(getAssets(), "KoPub.ttf"));
+
     }
 
     @Override

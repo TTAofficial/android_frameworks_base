@@ -24,5 +24,9 @@
     <string name="status_bar_recent_floating_item_title">Floating mode</string> 
  
     <!-- Title shown in notification popup for launching notification in floating mode -->
-    <string name="status_bar_notification_floating_item_title">Floating mode</string>    
+    <string name="status_bar_notification_floating_item_title">Floating mode</string>
+
+	<!-- Recent Apps Panel Title Text -->
+	<string name="recent_apps_title">Recent Apps</string>
+
 </resources>

@@ -1,23 +1,28 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/status_bottom_title"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="bottom"
-    android:orientation="vertical" 
+    android:layout_height="77dp"
     android:background="@drawable/recent_apps_background">
-
-        <ImageView
-            android:id="@+id/recents_clear"
-	    android:layout_marginBottom="17dp"
-            android:layout_marginLeft="145dp"
-            android:clickable="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scaleType="center"
-	    android:layout_gravity="center|bottom"
-	    android:gravity="bottom"
-	    android:src="@drawable/ic_recents_clear"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-</LinearLayout>
+	
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/recent_apps_title"
+		android:textSize="30dp"
+		android:textColor="#FFFFFF"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="15dp"
+		android:text="@string/recent_apps_title" />
+   
+    <ImageView
+        android:id="@+id/recents_clear"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="15dip"
+        android:scaleType="center"
+    	android:src="@drawable/ic_recents_clear" />
+    
+</RelativeLayout>
