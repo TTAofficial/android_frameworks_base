@@ -86,7 +86,8 @@
     <TextView android:layout_width="wrap_content" 
 		android:layout_height="wrap_content" 
 		android:id="@+id/recent_apps_title" 
-		android:text="" />
+		android:text="d"
+		android:textColor="FFFFFF" />
 
     <include layout="@layout/status_bar_no_recent_apps"
         android:id="@+id/recents_no_apps"
